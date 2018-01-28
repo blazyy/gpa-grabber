@@ -2,7 +2,7 @@
 from selenium import webdriver
 import csv
 
-RRN = 160071602000
+RRN = 160071601000
 grades = []
 credits = []
 x = 1
