@@ -1,4 +1,6 @@
 
+# only works for one university currently. duh.
+
 from selenium import webdriver
 import csv
 
@@ -91,29 +93,4 @@ with open("grades.csv", "w") as f:
     writer = csv.writer(f)
     for row in rows:
         writer.writerow(row)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
