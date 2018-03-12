@@ -29,7 +29,7 @@ def calc_gpa():
     for credit in credits:
         totalcredits += (credit * creditPerSubject[i])
         i += 1
-    return totalcredits/24
+    return round((totalcredits/24), 2)
 
 
 # loads an instance of chrome, and then web page is loaded
@@ -68,7 +68,7 @@ while RRN < 160071602050:
         if len(i.text) < 2 and i.text.isalpha():
             grades.append(i.text)
 
-    grades_to_credits()
+    grades_to_credits()  # converts grades to credits and appends to credit list
     gpa = calc_gpa()
 
     rrns.append(rrn.text)  # appends rrn to list of rrns
