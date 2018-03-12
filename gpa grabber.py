@@ -16,20 +16,11 @@ rrns = []
 
 def grades_to_credits():
     for grade in grades:
-        if grade == 'S':
-            credits.append(10)
-        elif grade == 'A':
-            credits.append(9)
-        elif grade == 'B':
-            credits.append(8)
-        elif grade == 'C':
-            credits.append(7)
-        elif grade == 'D':
-            credits.append(6)
-        elif grade == 'E':
-            credits.append(5)
+        if grade in creditPerGrade:
+            credits.append(creditPerGrade[grade])
         else:
             credits.append(0)
+
 
 
 def calc_gpa():
@@ -86,6 +77,8 @@ while RRN < 160071602050:
 
     del grades[:]  # deletes current grade list so that next person's gpa can be calculated
     del credits[:]  # same as above
+    
+driver.close() 
 
 rows = zip(rrns, names, gpas)
 
