@@ -5,5 +5,5 @@ If you want to use this, you need to download the required browser driver (in my
 
 Modify the starting and ending RRN as required.
 
-(UPDATE, 23 JAN 2019):
+**(UPDATE, 23 JAN 2019)**:
 University took down the website, so script no longer works. However you can read about how it works in my blog post.
